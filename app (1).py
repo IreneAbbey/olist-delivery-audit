@@ -60,7 +60,7 @@ with col_b:
 
 st.divider()
 
-#Row 2: Heatmap (Story 3)──
+#Row 2: Heatmap (Story 3)
 st.subheader('% Late Deliveries by State (Sorted)')
 st.caption("Late delivery rate per state, sorted highest to lowest")
 state_late = master_ds.groupby('customer_state')['is_late'].mean().mul(100).round(1)
